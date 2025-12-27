@@ -1,5 +1,51 @@
 # fpv
 
+Display Elements Detail
+Row 1 - Situational Awareness
+
+Flight Mode (3 char): MAN, STB, RTL, etc.
+GPS Satellites: "S##" format (blinks if <10)
+HDOP: "H#.#" format (displayed only if <10)
+Link Quality: Percentage or RSSI in dBm
+
+Row 2 & 3 - Power System
+
+Battery Voltage: ##.#V format (blinks if below warning threshold)
+Current Draw: #.#A format
+Battery Percentage: ##% format (blinks if <20%)
+Capacity Used: #.##Ah format
+
+Row 4 & 5 - Navigation
+
+Distance from Home: #.#km format (medium font)
+Altitude MSL: ###m format
+Ground Speed: ##kph format
+Heading: @### degrees format
+ETA: Minutes:seconds to home at cruise speed
+
+Row 6 - Alert Status
+Priority-based warning display (highest priority shown):
+
+RTL ACTIVE (flashing, inverted text)
+BATTERY CRITICAL (<14.0V, inverted text)
+LOW GPS (<10 satellites, inverted text)
+BATTERY LOW (<14.8V, inverted text)
+WEAK SIGNAL (<-80 dBm, inverted text)
+ALL OK (normal operations)
+
+-------------------------------------------------------------------------------------------------
+ MAN    S12  H1.2            95%        
+-------------------------------------------------------------------------------------------------
+ 16.4V      2.5A              87%       
+ 0.45Ah                       
+-------------------------------------------------------------------------------------------------
+ 2.5km      125m                        
+ 55kph  @045         2:43               
+-------------------------------------------------------------------------------------------------
+              ALL OK                     
+-------------------------------------------------------------------------------------------------
+
+
 1. Visual Studio Code (VS Code)
 Set encoding without BOM:
 Click the encoding label in the bottom status bar (e.g., UTF-8).
