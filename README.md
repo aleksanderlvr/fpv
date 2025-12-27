@@ -4,6 +4,18 @@ Telemetry screen - EdgeTX v. 2.11.0 - GX12
 
 The LUA file can only be edited in a suitable editor, see below. It must not contain so-called BOM characters. The file name must not be longer than 6 characters, otherwise the GX12 will ignore the file.
 
+For voice alarm, pesonal setings are:
+local config = {
+  cells = 4,
+  capacity = 5000,
+  warn_volt = 14.8,
+  crit_volt = 14.0,
+  min_sats = 10,
+  tqly_warn = 50,
+  rssi_warn = -80,
+  cruise = 55
+}
+
 
 Display Elements Detail
 Row 1 - Situational Awareness
