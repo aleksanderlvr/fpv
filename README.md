@@ -1,5 +1,10 @@
 # fpv
 
+Telemetry screen - EdgeTX v. 2.11.0 - GX12
+
+The LUA file can only be edited in a suitable editor, see below. It must not contain so-called BOM characters. The file name must not be longer than 6 characters, otherwise the GX12 will ignore the file.
+
+
 Display Elements Detail
 Row 1 - Situational Awareness
 
@@ -33,18 +38,19 @@ BATTERY LOW (<14.8V, inverted text)
 WEAK SIGNAL (<-80 dBm, inverted text)
 ALL OK (normal operations)
 
--------------------------------------------------------------------------------------------------
+-----------------------------------
  MAN    S12  H1.2            95%        
--------------------------------------------------------------------------------------------------
+-----------------------------------
  16.4V      2.5A              87%       
  0.45Ah                       
--------------------------------------------------------------------------------------------------
+-----------------------------------
  2.5km      125m                        
  55kph  @045         2:43               
--------------------------------------------------------------------------------------------------
-              ALL OK                     
--------------------------------------------------------------------------------------------------
+----------------------------------
+              ALL OK
+----------------------------------
 
+Possible editors:
 
 1. Visual Studio Code (VS Code)
 Set encoding without BOM:
