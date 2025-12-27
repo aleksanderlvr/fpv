@@ -11,13 +11,12 @@ Row 1 - Situational Awareness
 Flight Mode (3 char): MAN, STB, RTL, etc.
 GPS Satellites: "S##" format (blinks if <10)
 HDOP: "H#.#" format (displayed only if <10)
-Link Quality: Percentage or RSSI in dBm
+Link Quality:  RSSI in dBm
 
 Row 2 & 3 - Power System
 
 Battery Voltage: ##.#V format (blinks if below warning threshold)
 Current Draw: #.#A format
-Battery Percentage: ##% format (blinks if <20%)
 Capacity Used: #.##Ah format
 
 Row 4 & 5 - Navigation
@@ -39,10 +38,10 @@ WEAK SIGNAL (<-80 dBm, inverted text)
 ALL OK (normal operations)
 
 -----------------------------------
- MAN    S12  H1.2            95%        
+ MAN    S12  H1.2            -21        
 -----------------------------------
- 16.4V      2.5A              87%       
- 0.45Ah                       
+ 16.4V      2.5A                    
+            0.45Ah                       
 -----------------------------------
  2.5km      125m                        
  55kph  @045         2:43               
