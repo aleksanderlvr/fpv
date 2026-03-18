@@ -1,4 +1,4 @@
-# fpv
+# fpv telemetry screen GX12 Radiomaster
 
 Telemetry screen - EdgeTX v. 2.11.0 - GX12
 
